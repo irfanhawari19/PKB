@@ -4,14 +4,14 @@ def drawGrid(grid):
     #Displays the current grid
     print(' ' + grid[6] + ' | ' + grid[7] + ' | ' + grid[8] + ' ')
     print('___________')
-    print(' ' + grid[3] + ' | ' + grid[4] + ' | ' + grid[5] + ' ')
+    print(' ' + grid[5] + ' | ' + grid[4] + ' | ' + grid[3] + ' ')
     print('___________')
     print(' ' + grid[0] + ' | ' + grid[1] + ' | ' + grid[2] + ' ')
     print()
 
 
 def checkWin(grid , player):
-    if ((grid[6] == grid[7] == grid[8] == player) or (grid[3] == grid[4] == grid[5] == player) or (grid[0] == grid[1] == grid[2] == player) or (grid[6] == grid[3] == grid[0] == player) or (grid[7] == grid[4] == grid[1] == player) or (grid[8] == grid[5] == grid[2] == player) or (grid[6] == grid[4] == grid[2] == player) or (grid[8] == grid[4] == grid[0] == player)):
+    if ((grid[6] == grid[7] == grid[8] == player) or (grid[5] == grid[4] == grid[3] == player) or (grid[0] == grid[1] == grid[2] == player) or (grid[6] == grid[3] == grid[0] == player) or (grid[7] == grid[4] == grid[1] == player) or (grid[8] == grid[5] == grid[2] == player) or (grid[6] == grid[4] == grid[2] == player) or (grid[8] == grid[4] == grid[0] == player)):
         return True
 
 
